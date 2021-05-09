@@ -53,8 +53,8 @@
   }
 
   .flip-card-front img {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     padding: 1rem 0;
       border-radius: 50%;
   }
@@ -65,9 +65,10 @@
   }
 
   .flip-card-front h1 {
-    font-size: 2.5rem;
+    font-size: 3.0rem;
     color: black;
     font-family: 'Dancing Script', cursive;
+    justify-content: bottom;
   }
 
   .flip-card-back p {
@@ -75,6 +76,7 @@
     text-align: justify;
     height: 225px;
     border-radius: 2rem;
+    
     padding: 0rem 1rem 2rem 1rem;
   }
 
@@ -82,12 +84,12 @@
     padding: 0.75rem 1.5rem;
     border-radius: 1rem;
     font-size: 1.5rem;
-    border: none;
+    border: outset;
     outline: none;
     color:black;
     background: linear-gradient(to right, #ff94c2 ,  #FFED61);
     background-color: #FFED61;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script';
   }
 
   .socialLinks {
