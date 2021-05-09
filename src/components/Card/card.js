@@ -1,4 +1,6 @@
 import React, { useState }from 'react';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import car from '../../images/profile.png';
 
@@ -15,6 +17,7 @@ const Card = ( {data} ) => {
     }
     
         return (
+            
             <div className="flip-card" height={200}>
                 <div className="flip-card-inner">
                     <div className="flip-card-front" height={200}>
@@ -25,9 +28,9 @@ const Card = ( {data} ) => {
                         <h2> Question </h2>
                         <p className="desc" dangerouslySetInnerHTML={{ __html: data.Comment }}></p>
                         <div className="socialLinks">
-                            <button onClick = {setValues}>
+                            <Button type="button" class="btn btn-success" onClick = {setValues}>
                                 Find Out 
-                            </button>
+                            </Button>
                         </div>
                         
                     </div>
