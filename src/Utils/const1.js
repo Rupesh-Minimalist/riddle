@@ -1,7 +1,6 @@
 import powerpuff from '../images/powerpuff.png';
 import pikachu from '../images/pika.jpg';
 import jetha from '../images/jetha.jpg';
-import lab from '../images/lab.png';
 import lib from '../images/lib.png';
 import black from '../images/black.png';
 import baburao from '../images/baburao.png';

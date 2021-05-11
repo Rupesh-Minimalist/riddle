@@ -15,6 +15,12 @@ const Profile = () => {
 
             
             </div>
+            <div>
+                <button onClick>
+                    About
+                    
+                </button>
+            </div>
         </div>
     )
 }
