@@ -8,12 +8,17 @@
         font-family: 'Lobster', cursive;
         font-size: 5.0rem;
     }
+    .btn-about {
+        align-self: center;
+    }
     img {
         border-radius: 500%;
         width: 400px;
         height: 400px;
     }
-    button
+    
+}
+.btn-about Button
     {
         padding: 0.75rem 1.5rem;
         border-radius: 1rem;
@@ -24,7 +29,6 @@
         background-color: #f1ece9;
         font-family: "Lobster" ;
     }
-}
 
 @media screen and (max-width: 750px){
     .Profile{
