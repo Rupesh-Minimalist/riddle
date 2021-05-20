@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import $ from "jquery";
 import Profile from "../Profile";
+import logo from '../../images/logo.png';
 
 const About = () => {
   useEffect(() => {
@@ -11,10 +12,10 @@ const About = () => {
     $(".image").hide();
   };
   const changeBackground = () => {
-    $(".pooja").on({
+    $(".bgdiff").on({
       mouseenter: function () {
-        $(this).css("background-color", "cyan");
-        $(".description").css("background-color", "cyan");
+        $(this).css("background-color", "#ffcccc");
+        $(".description").css("background-color", "#ffcccc");
       },
 
       mouseleave: function () {
@@ -26,22 +27,23 @@ const About = () => {
 
   return (
     <div>
-      <div onMouseOver={() => changeBackground()} className="pooja">
+      <div onMouseOver={() => changeBackground()} className="bgdiff">
         <Profile />
       </div>
 
-      <div >
+      <div style ={{background : 'white'}} >
         <h2>Creators</h2>
         <div class="d-flex justify-content-around">
+
           <div class="card " style={{ width: "400px" }}>
             <img
               class="card-img-top"
-              src="img_avatar1.png"
+              src= {logo}
               alt="Card"
               style={{ width: "100%" }}
             />
             <div class="card-body">
-              <h4 class="card-title">John Doe</h4>
+              <h4 class="card-title">Rupesh</h4>
               <p class="card-text">
                 Some example text some example text. John Doe is an architect
                 and engineer
@@ -55,12 +57,12 @@ const About = () => {
           <div class="card" style={{ width: "400px" }}>
             <img
               class="card-img-top"
-              src="img_avatar1.png"
+              src={logo}
               alt="Card"
               style={{ width: "100%" }}
             />
             <div class="card-body">
-              <h4 class="card-title">John Doe</h4>
+              <h4 class="card-title">Garima</h4>
               <p class="card-text">
                 Some example text some example text. John Doe is an architect
                 and engineer
@@ -74,12 +76,31 @@ const About = () => {
           <div class="card" style={{ width: "400px" }}>
             <img
               class="card-img-top"
-              src="img_avatar1.png"
+              src={logo}
               alt="Card"
               style={{ width: "100%" }}
             />
             <div class="card-body">
-              <h4 class="card-title">John Doe</h4>
+              <h4 class="card-title">Shruti</h4>
+              <p class="card-text">
+                Some example text some example text. John Doe is an architect
+                and engineer
+              </p>
+              <a href="/" class="btn btn-primary">
+                See Profile
+              </a>
+            </div>
+          </div>
+
+          <div class="card" style={{ width: "400px" }}>
+            <img
+              class="card-img-top"
+              src={logo}
+              alt="Card"
+              style={{ width: "100%" }}
+            />
+            <div class="card-body">
+              <h4 class="card-title">Suvarna</h4>
               <p class="card-text">
                 Some example text some example text. John Doe is an architect
                 and engineer
