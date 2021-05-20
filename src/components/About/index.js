@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
 import $ from "jquery";
 import Profile from "../Profile";
-import logo from '../../images/logo.png';
+import './styles.css';
+import rupesh from '../../images/rupesh.png';
+import suvarna from '../../images/suvarna.png';
+import garima from '../../images/garima.png';
+import shruti from '../../images/shruti.png';
+
+
 
 const About = () => {
   useEffect(() => {
@@ -32,15 +38,15 @@ const About = () => {
       </div>
 
       <div style ={{background : 'white'}} >
-        <h2>Creators</h2>
+        <h1>Creators</h1>
         <div class="d-flex justify-content-around">
 
-          <div class="card " style={{ width: "400px" }}>
+          <div className="creator" class="card" style={{ width: "400px" }}>
             <img
               class="card-img-top"
-              src= {logo}
+              src= {rupesh}
               alt="Card"
-              style={{ width: "100%" }}
+              style={{ width: "390px", height: "350px" , borderRadius: " 25rem" }}
             />
             <div class="card-body">
               <h4 class="card-title">Rupesh</h4>
@@ -54,12 +60,12 @@ const About = () => {
             </div>
           </div>
           
-          <div class="card" style={{ width: "400px" }}>
+          <div className="creator" class="card" style={{ width: "400px" }}>
             <img
               class="card-img-top"
-              src={logo}
+              src={garima}
               alt="Card"
-              style={{ width: "100%" }}
+              style={{ width: "395px", height: "350px" , borderRadius: " 25rem" }}
             />
             <div class="card-body">
               <h4 class="card-title">Garima</h4>
@@ -73,15 +79,15 @@ const About = () => {
             </div>
           </div>
 
-          <div class="card" style={{ width: "400px" }}>
+          <div className="creator" class="card" style={{ width: "400px" }}>
             <img
               class="card-img-top"
-              src={logo}
+              src={suvarna}
               alt="Card"
-              style={{ width: "100%" }}
+              style={{ width: "390px", height: "350px" , borderRadius: " 30rem"}}
             />
             <div class="card-body">
-              <h4 class="card-title">Shruti</h4>
+              <h4 class="card-title">Suvarna</h4>
               <p class="card-text">
                 Some example text some example text. John Doe is an architect
                 and engineer
@@ -92,15 +98,15 @@ const About = () => {
             </div>
           </div>
 
-          <div class="card" style={{ width: "400px" }}>
+          <div className="creator" class="card" style={{ width: "400px" }}>
             <img
               class="card-img-top"
-              src={logo}
+              src={shruti}
               alt="Card"
-              style={{ width: "100%" }}
+              style={{ width: "390px", height: "350px" , borderRadius: " 30rem"}}
             />
             <div class="card-body">
-              <h4 class="card-title">Suvarna</h4>
+              <h4 class="card-title">Shruti</h4>
               <p class="card-text">
                 Some example text some example text. John Doe is an architect
                 and engineer
