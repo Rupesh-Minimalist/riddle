@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
 import $ from "jquery";
 import Profile from "../Profile";
-import './styles.css';
-import rupesh from '../../images/rupesh.png';
-import suvarna from '../../images/suvarna.png';
-import garima from '../../images/garima.png';
-import shruti from '../../images/shruti.png';
-
-
+import "./styles.css";
+import rupesh from "../../images/rupesh.png";
+import suvarna from "../../images/suvarna.png";
+import garima from "../../images/garima.png";
+import shruti from "../../images/shruti.png";
 
 const About = () => {
   useEffect(() => {
@@ -37,45 +35,40 @@ const About = () => {
         <Profile />
       </div>
 
-      <div style ={{background : 'white'}} >
+      <div style={{ background: "white" }}>
         <h1>Creators</h1>
         <div class="d-flex justify-content-around">
-
           <div className="creator" class="card" style={{ width: "400px" }}>
             <img
               class="card-img-top"
-              src= {rupesh}
+              src={rupesh}
               alt="Card"
-              style={{ width: "390px", height: "350px" , borderRadius: " 25rem" }}
+              style={{
+                width: "370px",
+                height: "350px",
+                borderRadius: " 25rem",
+              }}
             />
             <div class="card-body">
               <h4 class="card-title">Rupesh</h4>
-              <p class="card-text">
-                Some example text some example text. John Doe is an architect
-                and engineer
-              </p>
-              <a href="/" class="btn btn-primary">
-                See Profile
-              </a>
+              <p class="card-text">Developer Id- 1910990976</p>
             </div>
           </div>
-          
+
           <div className="creator" class="card" style={{ width: "400px" }}>
             <img
               class="card-img-top"
               src={garima}
               alt="Card"
-              style={{ width: "395px", height: "350px" , borderRadius: " 25rem" }}
+              style={{
+                width: "370px",
+                height: "350px",
+                borderRadius: " 25rem",
+              }}
             />
             <div class="card-body">
               <h4 class="card-title">Garima</h4>
-              <p class="card-text">
-                Some example text some example text. John Doe is an architect
-                and engineer
-              </p>
-              <a href="/" class="btn btn-primary">
-                See Profile
-              </a>
+              <p class="card-text">Developer Id- 1910990973</p>
             </div>
           </div>
 
@@ -84,17 +77,15 @@ const About = () => {
               class="card-img-top"
               src={suvarna}
               alt="Card"
-              style={{ width: "390px", height: "350px" , borderRadius: " 30rem"}}
+              style={{
+                width: "370px",
+                height: "350px",
+                borderRadius: " 30rem",
+              }}
             />
             <div class="card-body">
               <h4 class="card-title">Suvarna</h4>
-              <p class="card-text">
-                Some example text some example text. John Doe is an architect
-                and engineer
-              </p>
-              <a href="/" class="btn btn-primary">
-                See Profile
-              </a>
+              <p class="card-text">Developer Id-1910990966</p>
             </div>
           </div>
 
@@ -103,23 +94,22 @@ const About = () => {
               class="card-img-top"
               src={shruti}
               alt="Card"
-              style={{ width: "390px", height: "350px" , borderRadius: " 30rem"}}
+              style={{
+                width: "370px",
+                height: "350px",
+                borderRadius: " 30rem",
+              }}
             />
             <div class="card-body">
               <h4 class="card-title">Shruti</h4>
-              <p class="card-text">
-                Some example text some example text. John Doe is an architect
-                and engineer
-              </p>
-              <a href="/" class="btn btn-primary">
-                See Profile
-              </a>
+              <p class="card-text">Developer Id-1910990972</p>
             </div>
           </div>
-
-          
-
-          
+        </div>
+        <div style={{ padding: "100px" }}>
+          <a href="/" class="btn btn-primary" style={{ width: "400px"}}>
+            Home
+          </a>
         </div>
       </div>
     </div>
